@@ -11,7 +11,13 @@
 <!--    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet"> &lt;!&ndash; https://fonts.google.com/specimen/Kumbh+Sans &ndash;&gt;-->
     <link rel="preconnect" rel="stylesheet" href="fontawesome/css/all.min.css">  <!-- https://fontawesome.com/-->
     <link rel="stylesheet" href="css/magnific-popup.css">       <!-- https://dimsemenov.com/plugins/magnific-popup/ -->
+<!-- Load the stylesheet that will reference the LCP image.   -->
     <link rel="stylesheet" href="css/tooplate-vertex.css">
+<!--  Preload the LCP image with a high fetchpriority so it starts loading with the stylesheet.  -->
+    <link rel="preload" fetchpriority="high" as="image" href="img/vertex-bg-01.webp" type="image/webp">
+
+    loadCSS( "https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" );
+
 <!--
 
 Tooplate 2124 Vertex
